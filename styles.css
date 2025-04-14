@@ -1,0 +1,270 @@
+/* Ensure body and html take up full height of the screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full height for the home section */
+#home {
+    height: 100vh; /* 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the section */
+    background-color: black; /* Optional: Set the background color to black for contrast */
+}
+
+/* Title and subtitle styling */
+.title {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    font-size: 3rem; /* Adjust font size as needed */
+    color: white;
+}
+
+.subtitle {
+    color: #f5cb5c;
+    font-weight: bold;
+    font-size: 1.25rem; /* Adjust font size for subtitle */
+}
+
+/* General body styling */
+body {
+    background-image: url(https://wallpapercave.com/wp/wp9100275.jpg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Container text centered */
+.container.text-center {
+    text-align: center;
+}
+
+
+.text-section {
+    max-width: 50%;
+    text-align: left; /* Align smaller text to the left */
+}
+
+/* Info box layout */
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.6); /* Same semi-transparent dark background */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Keep the same shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.info-box:hover {
+    background-color: rgba(34, 34, 34, 0.8); /* Slightly darker transparent background on hover */
+    transform: scale(1.03); /* Slight zoom-in */
+    box-shadow: inset 0 0 20px rgba(141, 26, 45, 0.911); /* Soft gold glow inside */
+}
+
+    /* Image inside info box */
+    .info-box img {
+        max-width: 150px; /* Adjust the width of the image */
+        margin-left: 20px; /* Add space between the image and the text */
+        border-radius: 50%; /* Optional: To make the image round */
+    }
+
+/* Skills Section */
+#skills {
+    text-align: center;
+}
+
+.skill-card {
+    background-color: rgba(34, 34, 34, 0.6); /* semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 200px; /* Maximum size of the image */
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    color: #f5cb5c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Hover effect for the skill cards */
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(34, 34, 34, 0.8); /* Slightly darker background on hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-card {
+        margin-bottom: 20px;
+    }
+}
+/* Full-width container for sections */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+    /* Add margin top to sections */
+    .container.mt-4 {
+        margin-top: 30px;
+    }
+
+    /* Center section titles */
+    .container h2 {
+        text-align: center; /* Center each section title */
+        font-family: Impact, sans-serif;
+        color: white;
+    }
+
+/* Info box paragraph and lists */
+.info-box p,
+.info-box ul {
+    text-align: left; /* Align text or lists to the left below each title */
+    width: 100%; /* Ensure the text occupies full width */
+}
+
+.info-box ul {
+    padding-left: 20px;
+}
+
+/* Centering navigation text in collapsed menu */
+.navbar-collapse {
+    text-align: right;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: right;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Makes the hover background look smoother */
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Light gold background */
+    color: gold;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: gold;
+    color: black !important;
+    border-radius: 8px;
+}
+    
+
+/* Styling for the info section */
+.info-box p.subtitle {
+    color: #f5cb5c;
+}
+
+/* White color for the timeframes */
+.info-box p.subtitle-timeframe {
+    color: white;
+}
+
+/* For Education and Info section timeframes */
+.info-box .subtitle-timeframe {
+    color: white;
+}
+
+/* Navbar customizations */
+.navbar {
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px;
+}
+
+/* Styling for the home section */
+#home {
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0); /* Optional: transparent black overlay */
+    backdrop-filter: blur(4px); /* Optional: slight blur */
+}
+
+/* Add a margin top to sections */
+#info, #projects, #skills, #education, #hobbies {
+    margin-top: 30px;
+}
+.highlight {
+    background-color: rgba(245, 203, 92, 0.3) !important; /* Light yellow highlight */
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+#rafael-edward {
+    background-color: rgba(34, 34, 34, 0.6); /* Transparent */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+    text-align: center;
+    max-width: 80%; /* Adjust width */
+    margin: auto; /* Center the section */
+}
+
+.profile-img {
+    width: 150px; /* Adjust image size */
+    height: 150px;
+    height:auto;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+#rafael-edward h2,
+#rafael-edward p.subtitle {
+    text-align: center; /* Center the title and subtitle */
+    width: 100%; /* Ensure they take up full width */
+}
+
+html {
+    scroll-padding-top: 70px;
+  }
+
+  #projectCarousel {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #projectCarousel img {
+    max-height: 450px;
+    object-fit: cover;
+  }
+ 
